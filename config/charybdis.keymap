@@ -110,7 +110,6 @@
 &lt 3 Z       &kp X        &kp C        &kp V          &kp B        &kp N         &kp M          &kp COMMA    &kp DOT      &lt 3 SLASH
                            &kp BSPC     &kp SPACE      &lt 2 TAB    &lt 2 ESCAPE  &kp RET
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         colemak {
@@ -120,7 +119,6 @@
 &lt 3 Z       &kp X        &kp C        &kp D          &kp V        &kp K         &kp H          &kp COMMA    &kp DOT      &lt 3 SLASH
                            &kp BSPC     &kp SPACE      &lt 2 TAB    &lt 2 ESCAPE  &kp RET
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         lower {
@@ -130,7 +128,6 @@
 &kp LBKT       &kp LS(LBRC)  &kp LS(RBRC)   &kp RBKT       &kp GRAVE        &kp MINUS      &kp EQUAL      &kp COMMA     &kp DOT       &kp FSLH
                              &trans         &trans         &lt 4 TAB        &lt 4 ESCAPE   &trans
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         nav {
@@ -140,7 +137,6 @@
 &none      &mo 5     &none     &none      &none       &none     &none     &none   &mo 5      &none
                      &mkp MB2  &mkp MB1   &mkp MB3    &mkp MB2  &mkp MB1
             >;
-            trackball-bindings = <&tmv_fine>;
         };
 
         settings {
@@ -150,7 +146,6 @@
 &none    &none    &none           &none   &none     &none       &none         &none         &none         &none
                   &none           &none   &none     &none       &none
             >;
-            trackball-bindings = <&tmv_coarse>;
         };
 
         scroll {
@@ -160,7 +155,6 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans
             >;
-            trackball-bindings = <&tsl>;
         };
     };
 };
