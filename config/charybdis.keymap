@@ -72,11 +72,13 @@
         Grave {
             bindings = <&kp GRAVE>;
             key-positions = <20 21>;
+            layers = <0 1>;
         };
 
         Minus {
             bindings = <&kp MINUS>;
             key-positions = <28 29>;
+            layers = <0 1>;
         };
 
         Quote {
@@ -94,11 +96,14 @@
         LBracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <8 9>;
+            layers = <0 1>;
+            require-prior-idle-ms = <100>;
         };
 
         Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            require-prior-idle-ms = <100>;
         };
 
         Backslash {
