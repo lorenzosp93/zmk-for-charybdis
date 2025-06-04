@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <180>;
@@ -97,19 +98,28 @@
 
         nav {
             bindings = <
-&none  &none           &none           &none            &none            &none      &none     &none    &none       &none
-&none  &none           &kp UP_ARROW    &none            &kp PAGE_UP      &none      &none     &none    &none       &none
-&none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp EQUAL  &kp RBKT  &kp SQT  &kp PERIOD  &kp SLASH
-                       &none           &none            &none            &none      &none
+&none      &none     &none     &none      &none       &none     &none     &none   &none      &none
+&kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
+&none      &mo 5     &none     &none      &none       &none     &none     &none   &mo 5      &none
+                     &mkp MB1  &mkp MB2   &mkp MB3    &mkp MB2  &mkp MB1
             >;
         };
 
         settings {
             bindings = <
-&none  &none  &none  &none  &none    &none       &none         &none         &none         &none
-&none  &none  &none  &none  &none    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&none  &none  &none  &none  &none    &none       &none         &none         &none         &none
-              &none  &none  &none    &none       &none
+&kp F1   &kp F2   &kp F3          &kp F4  &kp F5    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10
+&kp F11  &kp F12  &studio_unlock  &to 1   &to 0     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&none    &none    &none           &none   &none     &none       &none         &none         &none         &none
+                  &none           &none   &none     &none       &none
+            >;
+        };
+
+        scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans
             >;
         };
 
