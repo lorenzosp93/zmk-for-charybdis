@@ -66,6 +66,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        GRV {
+            bindings = <&kp GRAVE>;
+            key-positions = <20 21>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <28 29>;
+        };
+
+        Quote {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
+        };
+
+        DoubleQuote {
+            bindings = <&kp DQT>;
+            key-positions = <10 11>;
+        };
+
+        RBracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 9>;
+        };
+
+        LBracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,7 +125,7 @@
             bindings = <
 &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)
 &hml LCTRL N1  &hml LALT N2  &hml LGUI N3   &hml LSHFT N4  &kp N5           &kp N6         &hmr RSHFT N7  &hmr RGUI N8  &hmr RALT N9  &hmr RCTRL N0
-&kp LBKT       &kp LS(LBRC)  &kp LS(RBRC)   &kp RBKT       &kp GRAVE        &kp SQT        &kp MINUS      &kp COMMA     &kp DOT       &kp FSLH
+&kp LBKT       &kp LS(LBRC)  &kp LS(RBRC)   &kp RBKT       &kp GRAVE        &kp MINUS      &kp EQUAL      &kp COMMA     &kp DOT       &kp FSLH
                              &trans         &trans         &lt 4 TAB        &lt 4 ESCAPE   &trans
             >;
         };
