@@ -81,10 +81,11 @@
             layers = <0 1>;
         };
 
-        Quote {
-            bindings = <&kp SQT>;
+        Semicolon {
+            bindings = <&kp SEMI>;
             key-positions = <18 19>;
             require-prior-idle-ms = <100>;
+            layers = <0 1>;
         };
 
         Tab {
@@ -125,7 +126,7 @@
         qwerty {
             bindings = <
 &kp Q         &kp W        &kp E        &kp R          &kp T        &kp Y         &kp U                       &kp I        &kp O        &kp P
-&hml LCTRL A  &hml LALT S  &hml LGUI D  &hmls LSHFT F  &kp G        &kp H         &hmrs RSHFT J               &hmr RGUI K  &hmr RALT L  &hmr RCTRL SEMI
+&hml LCTRL A  &hml LALT S  &hml LGUI D  &hmls LSHFT F  &kp G        &kp H         &hmrs RSHFT J               &hmr RGUI K  &hmr RALT L  &hmr RCTRL SINGLE_QUOTE
 &lt 4 Z       &kp X        &kp C        &kp V          &kp B        &kp N         &kp M                       &kp COMMA    &kp DOT      &lt 4 SLASH
                            &kp BSPC     &kp SPACE      &lt 2 TAB    &lt 2 ESCAPE  &hmr LA(LC(LG(LSHFT))) RET
             >;
@@ -133,7 +134,7 @@
 
         colemak {
             bindings = <
-&kp Q         &kp W        &kp F        &kp P          &kp B        &kp J         &kp L                       &kp U        &kp Y        &kp SEMI
+&kp Q         &kp W        &kp F        &kp P          &kp B        &kp J         &kp L                       &kp U        &kp Y        &kp SINGLE_QUOTE
 &hml LCTRL A  &hml LALT R  &hml LGUI S  &hmls LSHFT T  &kp G        &kp M         &hmrs RSHFT N               &hmr RGUI E  &hmr RALT I  &hmr RCTRL O
 &lt 4 Z       &kp X        &kp C        &kp D          &kp V        &kp K         &kp H                       &kp COMMA    &kp DOT      &lt 4 SLASH
                            &kp BSPC     &kp SPACE      &lt 2 TAB    &lt 2 ESCAPE  &hmr LA(LC(LG(LSHFT))) RET
