@@ -95,12 +95,14 @@
             key-positions = <18 19>;
             require-prior-idle-ms = <100>;
             layers = <0 1>;
+            timeout-ms = <30>;
         };
 
         Tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
             require-prior-idle-ms = <100>;
+            timeout-ms = <30>;
         };
 
         LBracket {
