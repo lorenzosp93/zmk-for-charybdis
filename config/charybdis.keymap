@@ -128,7 +128,7 @@
             layers = <2>;
         };
 
-        Caps_Word {
+        CapsWord {
             bindings = <&caps_word>;
             key-positions = <20 21>;
             layers = <2>;
