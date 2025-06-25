@@ -93,7 +93,7 @@
         Semicolon {
             bindings = <&kp SEMI>;
             key-positions = <18 19>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <120>;
             layers = <0 1>;
             timeout-ms = <30>;
         };
@@ -101,7 +101,7 @@
         Tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <120>;
             timeout-ms = <30>;
         };
 
@@ -109,13 +109,13 @@
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <8 9>;
             layers = <0 1>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <120>;
         };
 
         Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <120>;
         };
 
         Backslash {
@@ -128,6 +128,7 @@
             bindings = <&kp RBKT>;
             key-positions = <8 9>;
             layers = <2>;
+            require-prior-idle-ms = <120>;
         };
 
         CapsWord {
