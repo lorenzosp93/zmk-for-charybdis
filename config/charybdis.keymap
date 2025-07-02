@@ -110,12 +110,14 @@
             key-positions = <8 9>;
             layers = <0 1>;
             require-prior-idle-ms = <120>;
+            timeout-ms = <30>;
         };
 
         Esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
             require-prior-idle-ms = <120>;
+            timeout-ms = <30>;
         };
 
         Backslash {
