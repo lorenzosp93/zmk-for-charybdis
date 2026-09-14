@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: inorichi
       url-base: https://github.com/inorichi
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,5 +15,9 @@ manifest:
       remote: inorichi
       revision: main
       
+    - name: zmk-switch-layer
+      remote: mctechnology17
+      revision: 18320c2c7450dd807fe0ca531c9422a5c4547028
+
   self:
     path: config
