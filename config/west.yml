@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/inorichi
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,11 +15,15 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
-      revision: main
+      revision: 1d9c2c68ca76012e1b1e5f6ef02fa5eadc4ca399
       
     - name: zmk-switch-layer
       remote: mctechnology17
       revision: 18320c2c7450dd807fe0ca531c9422a5c4547028
+
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: 77a852293532879c992847e01db27abe4f94fa9f
 
   self:
     path: config

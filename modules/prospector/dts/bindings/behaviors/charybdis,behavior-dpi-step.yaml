@@ -1,0 +1,3 @@
+description: Step normal pointer sensitivity on the Prospector
+compatible: "charybdis,behavior-dpi-step"
+include: one_param.yaml

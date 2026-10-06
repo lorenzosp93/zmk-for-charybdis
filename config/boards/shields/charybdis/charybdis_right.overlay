@@ -58,9 +58,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        scroll-layers = <5>;
-        snipe-layers = <4>;
-      // automouse-layer = <3>;
+        // Layer-dependent modes are processed by the dongle.
     };
 };
 
@@ -108,9 +106,9 @@
 
 
 
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
+// Only the right peripheral publishes trackball events.
+#include "charybdis-input.dtsi"
+
+&trackball_split {
+    device = <&trackball>;
 };

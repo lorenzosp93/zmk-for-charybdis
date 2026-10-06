@@ -1,0 +1,5 @@
+name: charybdis-peripheral-compat
+build:
+  cmake: modules
+  settings:
+    dts_root: modules/prospector

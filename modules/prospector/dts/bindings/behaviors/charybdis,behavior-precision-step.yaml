@@ -1,0 +1,3 @@
+description: Step precision DPI
+compatible: "charybdis,behavior-precision-step"
+include: one_param.yaml

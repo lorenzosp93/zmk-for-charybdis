@@ -1,0 +1,50 @@
+/* SPDX-License-Identifier: MIT */
+#include <physical_layouts.dtsi>
+
+/ {
+    charybdis_layout: charybdis_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Charybdis 35";
+        transform = <&default_transform>;
+        kscan = <&dongle_kscan>;
+
+        // Schematic column stagger; keys follow the transform/keymap order.
+        //                         width height x    y   rotation rx ry
+        keys =
+            <&key_physical_attrs 100 100    0  50 0 0 0>,
+            <&key_physical_attrs 100 100  100  25 0 0 0>,
+            <&key_physical_attrs 100 100  200   0 0 0 0>,
+            <&key_physical_attrs 100 100  300  25 0 0 0>,
+            <&key_physical_attrs 100 100  400  50 0 0 0>,
+            <&key_physical_attrs 100 100  650  50 0 0 0>,
+            <&key_physical_attrs 100 100  750  25 0 0 0>,
+            <&key_physical_attrs 100 100  850   0 0 0 0>,
+            <&key_physical_attrs 100 100  950  25 0 0 0>,
+            <&key_physical_attrs 100 100 1050  50 0 0 0>,
+            <&key_physical_attrs 100 100    0 150 0 0 0>,
+            <&key_physical_attrs 100 100  100 125 0 0 0>,
+            <&key_physical_attrs 100 100  200 100 0 0 0>,
+            <&key_physical_attrs 100 100  300 125 0 0 0>,
+            <&key_physical_attrs 100 100  400 150 0 0 0>,
+            <&key_physical_attrs 100 100  650 150 0 0 0>,
+            <&key_physical_attrs 100 100  750 125 0 0 0>,
+            <&key_physical_attrs 100 100  850 100 0 0 0>,
+            <&key_physical_attrs 100 100  950 125 0 0 0>,
+            <&key_physical_attrs 100 100 1050 150 0 0 0>,
+            <&key_physical_attrs 100 100    0 250 0 0 0>,
+            <&key_physical_attrs 100 100  100 225 0 0 0>,
+            <&key_physical_attrs 100 100  200 200 0 0 0>,
+            <&key_physical_attrs 100 100  300 225 0 0 0>,
+            <&key_physical_attrs 100 100  400 250 0 0 0>,
+            <&key_physical_attrs 100 100  650 250 0 0 0>,
+            <&key_physical_attrs 100 100  750 225 0 0 0>,
+            <&key_physical_attrs 100 100  850 200 0 0 0>,
+            <&key_physical_attrs 100 100  950 225 0 0 0>,
+            <&key_physical_attrs 100 100 1050 250 0 0 0>,
+            <&key_physical_attrs 100 100  200 375 0 0 0>,
+            <&key_physical_attrs 100 100  300 400 0 0 0>,
+            <&key_physical_attrs 100 100  400 425 0 0 0>,
+            <&key_physical_attrs 100 100  650 425 0 0 0>,
+            <&key_physical_attrs 100 100  750 400 0 0 0>;
+    };
+};

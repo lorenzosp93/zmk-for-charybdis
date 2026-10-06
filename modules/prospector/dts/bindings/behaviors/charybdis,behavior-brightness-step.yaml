@@ -1,0 +1,3 @@
+description: Step Prospector backlight brightness
+compatible: "charybdis,behavior-brightness-step"
+include: one_param.yaml

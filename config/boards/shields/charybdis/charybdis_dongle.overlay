@@ -1,0 +1,49 @@
+#include "charybdis-transform.dtsi"
+#include "charybdis-layouts.dtsi"
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include "charybdis-input.dtsi"
+
+/ {
+    pointer_dpi: pointer_dpi {
+        compatible = "charybdis,input-processor-dpi";
+        #input-processor-cells = <0>;
+        track-remainders;
+    };
+
+    precision_dpi: precision_dpi {
+        compatible = "charybdis,input-processor-dpi";
+        #input-processor-cells = <0>;
+        track-remainders;
+    };
+
+    chosen {
+        zmk,kscan = &dongle_kscan;
+        zmk,physical-layout = &charybdis_layout;
+    };
+
+    dongle_kscan: kscan {
+        compatible = "zmk,kscan-mock";
+        rows = <0>;
+        columns = <0>;
+        events = <>;
+    };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+        input-processors = <&pointer_dpi>;
+
+        scroll {
+            layers = <5>;
+            input-processors = <&zip_xy_to_scroll_mapper
+                                &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
+                                &zip_scroll_scaler 1 70>;
+        };
+
+        precision {
+            layers = <4>;
+            input-processors = <&precision_dpi>;
+        };
+    };
+};
